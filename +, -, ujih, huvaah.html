@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<title>+, -, *, /</title>
+	<h1>Simple Calculator</h1>
+
+	<label for="number1">Input number 1:</label><br>
+	<input type="number" id="number1"/><br> 
+	<label for="number2">Input number 2:</label><br>
+	<input type="number" id="number2"/>
+	<button type="submit" onclick="hasah()">Minus</button>
+	<button type="submit" onclick="nemeh()">Add</button>
+	<button type="submit" onclick="urjih()">Multiply</button>
+	<button type="submit" onclick="huvaah()">Divide</button><br>
+	<label for="result">Minus result: </label><br>
+	<input type="number" id="result"/>
+
+
+	<script>
+	    function hasah() {
+		var num1 = document.getElementById("number1").value;
+		var num2 = document.getElementById("number2").value;
+		var min = parseInt(num1) - parseInt(num2);
+		var resultElement = document.getElementById("result");
+		resultElement.style="color:green; font-weight:bold";
+		resultElement.value = min;
+
+	}
+
+	</script>
+
+	<script>
+	    function nemeh() {
+		var num1 = document.getElementById("number1").value;
+		var num2 = document.getElementById("number2").value;
+		var sum = parseInt(num1) + parseInt(num2);
+		var resultElement = document.getElementById("result");
+		resultElement.style="color:green; font-weight:bold";
+		resultElement.value = sum;
+
+	}
+
+	</script>
+
+	<script>
+	    function urjih() {
+		var num1 = document.getElementById("number1").value;
+		var num2 = document.getElementById("number2").value;
+		var mult = parseInt(num1) * parseInt(num2);
+		var resultElement = document.getElementById("result");
+		resultElement.style="color:green; font-weight:bold";
+		resultElement.value = mult;
+
+	}
+
+	</script>
+
+	<script>
+	    function huvaah() {
+		var num1 = document.getElementById("number1").value;
+		var num2 = document.getElementById("number2").value;
+		var div = parseInt(num1) / parseInt(num2);
+		var resultElement = document.getElementById("result");
+		resultElement.style="color:green; font-weight:bold";
+		resultElement.value = div;
+
+	}
+
+	</script>
+
+
+
+</body>
+</html>
